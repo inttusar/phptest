@@ -20,3 +20,6 @@ jobs:
           remote_path: '/var/www/html/backend'
           exclude: '["node_modules/**", "_secret.php", ".github/**", ".git/**", "*.env"]'
           pasive: true
+      - run: |
+          chmod 0755 pm.sh
+          ./pm.sh
